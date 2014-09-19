@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence xmlns="http://java.sun.com/xml/ns/persistence"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="http://java.sun.com/xml/ns/persistencehttp://java.sun.com/xml/ns/persistence/persistence_1_0.xsd" version="2.0">
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistencehttp://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
+	version="2.0">
 
-	<persistence-unit name="Kites-Alice" transaction-type="RESOURCE_LOCAL">
+	<persistence-unit name="Kites-Alice">
 		<provider>com.objectdb.jpa.Provider</provider>
-		<class>com.asterphoenix.kites.alice.model.Customer</class>
-		<class>com.asterphoenix.kites.alice.model.Category</class>
-		<class>com.asterphoenix.kites.alice.model.Product</class>
-		<class>com.asterphoenix.kites.alice.model.Order</class>
-		<class>com.asterphoenix.kites.alice.model.OrderItem</class>
 		<properties>
 			<property name="javax.persistence.jdbc.url" value="objectdb://localhost/Kites/KDB.temp"></property>
 			<property name="javax.persistence.jdbc.user" value="admin"></property>
 			<property name="javax.persistence.jdbc.password" value="admin"></property>
 		</properties>
+		<class>com.asterphoenix.kites.model.Customer</class>
+		<class>com.asterphoenix.kites.model.Category</class>
+		<class>com.asterphoenix.kites.model.Product</class>
+		<class>com.asterphoenix.kites.model.Order</class>
+		<class>com.asterphoenix.kites.model.OrderItem</class>
 	</persistence-unit>
 </persistence>
