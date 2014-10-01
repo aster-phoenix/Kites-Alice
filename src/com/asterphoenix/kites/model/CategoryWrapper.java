@@ -12,6 +12,8 @@ import javax.xml.bind.annotation.XmlSeeAlso;
 @XmlSeeAlso(Category.class)
 public class CategoryWrapper extends ArrayList<Category> {
 	
+	private static final long serialVersionUID = -3872113327996333849L;
+
 	public CategoryWrapper() {
 		super();
 	}

@@ -1,7 +1,6 @@
 package com.asterphoenix.kites.alice.rest;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import javax.ejb.Stateless;
@@ -33,7 +32,7 @@ public class CatalogServiceJson {
 	public Response getAllCatalogs() {
 		TypedQuery<Category> q = em.createQuery("select c from Category c", Category.class);
 		CategoryWrapper c = new CategoryWrapper(q.getResultList());
-		return Response.ok(c).build();
+		return Response.ok(c).build();	
 	}
 	
 	@GET
