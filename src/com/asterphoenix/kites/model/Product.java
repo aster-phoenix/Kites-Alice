@@ -7,7 +7,6 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
@@ -15,7 +14,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Entity
 public class Product {
 	
-	@XmlAttribute
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long productID;
@@ -26,6 +24,7 @@ public class Product {
 	private String productBrand;
 	@ManyToOne
 	private Category category;
+	private String imageBytes;
 	
 	public long getProductID() {
 		return productID;
@@ -68,6 +67,12 @@ public class Product {
 	}
 	public void setCategory(Category category) {
 		this.category = category;
+	}
+	public String getImageBytes() {
+		return imageBytes;
+	}
+	public void setImageBytes(String imageBytes) {
+		this.imageBytes = imageBytes;
 	}
 
 }

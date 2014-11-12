@@ -7,7 +7,7 @@
 	<persistence-unit name="Kites-Alice">
 		<provider>com.objectdb.jpa.Provider</provider>
 		<properties>
-			<property name="javax.persistence.jdbc.url" value="objectdb://localhost/Kites/KDB.temp"></property>
+			<property name="javax.persistence.jdbc.url" value="objectdb://localhost/Kites/KDB.odb"></property>
 			<property name="javax.persistence.jdbc.user" value="admin"></property>
 			<property name="javax.persistence.jdbc.password" value="admin"></property>
 		</properties>

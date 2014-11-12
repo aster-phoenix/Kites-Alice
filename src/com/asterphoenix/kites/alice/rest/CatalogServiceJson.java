@@ -31,8 +31,8 @@ public class CatalogServiceJson {
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response getAllCatalogs() {
 		TypedQuery<Category> q = em.createQuery("select c from Category c", Category.class);
-		CategoryWrapper c = new CategoryWrapper(q.getResultList());
-		return Response.ok(c).build();	
+		CategoryWrapper w = new CategoryWrapper(q.getResultList());
+		return Response.ok(w).build();	
 	}
 	
 	@GET
@@ -41,8 +41,8 @@ public class CatalogServiceJson {
 	public Response getAllProducts() {
 		TypedQuery<Product> q =
 				em.createQuery("select p from Product p where p.productQTY > 0", Product.class);
-		ProductWrapper c = new ProductWrapper(q.getResultList());
-		return Response.ok(c).build();
+		ProductWrapper w = new ProductWrapper(q.getResultList());
+		return Response.ok(w).build();
 	}
 	
 	@GET
@@ -53,8 +53,8 @@ public class CatalogServiceJson {
 				em.createQuery("select p from Product p where p.category.categoryName = :name"
 						+ " and p.productQTY > 0", Product.class);
 		q.setParameter("name", categoryName);
-		ProductWrapper c = new ProductWrapper(q.getResultList());
-		return Response.ok(c).build();
+		ProductWrapper w = new ProductWrapper(q.getResultList());
+		return Response.ok(w).build();
 	}
 	
 	@GET
@@ -69,15 +69,15 @@ public class CatalogServiceJson {
 				list.add(p);
 			}
 		}
-		ProductWrapper c = new ProductWrapper(list);
-		return Response.ok(c).build();
+		ProductWrapper w = new ProductWrapper(list);
+		return Response.ok(w).build();
 	}
-
-//	@GET
-//	@Produces(MediaType.APPLICATION_XML)
-//	public Response getAllCatalogs() {
-//		TypedQuery<Category> q = em.createQuery("select c from Category c", Category.class);
-//		CategoryWrapper c = new CategoryWrapper(q.getResultList());
-//		return Response.ok(c).build();
-//	}
+	
+	@GET
+	@Path("products/byid/{id}")
+	@Produces(MediaType.APPLICATION_JSON)
+	public Response getProductsById(@PathParam("id") int productID){
+		return Response.ok(em.find(Product.class, productID)).build();
+	}
+	
 }
