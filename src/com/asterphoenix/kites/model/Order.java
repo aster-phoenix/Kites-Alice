@@ -1,6 +1,6 @@
 package com.asterphoenix.kites.model;
 
-import java.util.Set;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -22,7 +22,7 @@ public class Order {
 	private long orderID;
 	private float totalPrice;
 	private OrderStatus orderStatus;
-	private Set<OrderItem> orders;
+	private List<OrderItem> orders;
 
 	public enum OrderStatus {
 		New, Completed, Rejected
@@ -52,11 +52,11 @@ public class Order {
 		this.orderStatus = orderStatus;
 	}
 
-	public Set<OrderItem> getOrders() {
+	public List<OrderItem> getOrders() {
 		return orders;
 	}
 
-	public void setOrders(Set<OrderItem> orders) {
+	public void setOrders(List<OrderItem> orders) {
 		this.orders = orders;
 	}
 	
