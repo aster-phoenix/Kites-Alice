@@ -22,9 +22,30 @@
 			</table>
 		</div>
 		<div id="divContent">
-			<br><br><br><br><br><br>
-			Kites Open Source Shopping Cart<br><br>
-			Mobile commerce made easy!<br><br><br><br><br><br>
+			<br>Kites ocumentation<br><br>
+			<ul>
+			<li>Alice
+				<ul>
+					<li>[Host]/api/json {all messages are formatted in json}</li>
+					<li>[Host]/api/xml {all messages are formatted in xml}</li>
+					<li></li>
+				</ul>
+			</li>
+			<li>Jory
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</li>
+			<li>Yasmin
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</li>
+			</ul>
 		</div>
 		<div id="divFooter">-Kites Team 2015-</div>
 	</div>

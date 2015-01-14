@@ -23,8 +23,9 @@
 		</div>
 		<div id="divContent">
 			<br><br><br><br><br><br>
-			Kites Open Source Shopping Cart<br><br>
-			Mobile commerce made easy!<br><br><br><br><br><br>
+			Ghazy Abdallah<br><br>
+			Hashim Adam<br><br>
+			Safa Mohamed<br><br>
 		</div>
 		<div id="divFooter">-Kites Team 2015-</div>
 	</div>

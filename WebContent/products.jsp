@@ -22,9 +22,13 @@
 			</table>
 		</div>
 		<div id="divContent">
-			<br><br><br><br><br><br>
-			Kites Open Source Shopping Cart<br><br>
-			Mobile commerce made easy!<br><br><br><br><br><br>
+			<br><br><br>
+			<p>Kites Administration Panel - JORY</p>
+			<p>JavaSE 8 Desktop application for managing a small store!</p><br><br>
+			<p>Kites Client Application - YASMIN</p>
+			<p>Android 4+ applicaion for customers to buy products through</p><br><br>
+			<p>Kites Web Service - Alice</p>
+			<p>A RESTfull web service to deliver data to the android application</p><br><br>
 		</div>
 		<div id="divFooter">-Kites Team 2015-</div>
 	</div>

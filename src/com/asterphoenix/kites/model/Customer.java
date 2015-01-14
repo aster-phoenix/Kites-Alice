@@ -17,19 +17,20 @@ public class Customer {
 	@XmlAttribute
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private long cutomerID;
+	private long customerID;
 	private String customerFName;
 	private String customerLName;
 	private String customerUsername;
 	private String customerPassword;
 	private String customerEmail;
+	private String customerAddress;
 	private boolean customerIsActive;
 	
-	public long getCutomerID() {
-		return cutomerID;
+	public long getCustomerID() {
+		return customerID;
 	}
-	public void setCutomerID(long cutomerID) {
-		this.cutomerID = cutomerID;
+	public void setCustomerID(long cutomerID) {
+		this.customerID = cutomerID;
 	}
 	public String getCustomerFName() {
 		return customerFName;
@@ -60,6 +61,12 @@ public class Customer {
 	}
 	public void setCustomerEmail(String customerEmail) {
 		this.customerEmail = customerEmail;
+	}
+	public String getCustomerAddress() {
+		return customerAddress;
+	}
+	public void setCustomerAddress(String customerAddress) {
+		this.customerAddress = customerAddress;
 	}
 	public boolean isCustomerIsActive() {
 		return customerIsActive;

@@ -22,9 +22,16 @@
 			</table>
 		</div>
 		<div id="divContent">
-			<br><br><br><br><br><br>
-			Kites Open Source Shopping Cart<br><br>
-			Mobile commerce made easy!<br><br><br><br><br><br>
+			<br><br><br><br>
+			JavaSE 8<br><br>
+			JavaEE 7<br><br>
+			JPA 2.1<br><br>
+			Android 4+<br><br>
+			ObjectDB 2.5.7<br><br>
+			EJB 3.0<br><br>			
+			AES 128 bit<br><br>
+			RSA 2048 bit<br><br>
+			
 		</div>
 		<div id="divFooter">-Kites Team 2015-</div>
 	</div>

@@ -65,7 +65,7 @@ public class CatalogServiceJson {
 				em.createQuery("select p from Product p where p.productQTY > 0", Product.class);
 		List<Product> list = new ArrayList<Product>();
 		for (Product p : q.getResultList()) {
-			if (p.getProductName().toLowerCase().contains(productName)) {
+			if (p.getProductName().toLowerCase().contains(productName.toLowerCase())) {
 				list.add(p);
 			}
 		}

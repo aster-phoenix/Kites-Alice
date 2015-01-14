@@ -33,7 +33,7 @@ public class OrderItem {
 	public long getProductID() {
 		return productID;
 	}
-	public void setProduct(long productID) {
+	public void setProductID(long productID) {
 		this.productID = productID;
 	}
 	public String getProductName() {
